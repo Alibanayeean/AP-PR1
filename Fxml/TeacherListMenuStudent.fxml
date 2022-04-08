@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Scroolbar" prefHeight="825.0" prefWidth="1316.0" style="-fx-background-image: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentController.TeacherListMenuStudent">
+    <children>
+        <MenuBar fx:id="MenuBar" prefHeight="42.0" prefWidth="933.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Registration matters">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#CoursesListMenuFunction" text="Courses list" />
+                  <MenuItem mnemonicParsing="false" text="Teachers list" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Educational services">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Record works">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Profile">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="HomeButton" layoutX="1175.0" mnemonicParsing="false" onAction="#HomeButtonFunction" onMouseEntered="#mouseMovedHomeButton" onMouseExited="#mouseExitHomeButton" prefHeight="33.0" prefWidth="46.0" />
+        <ColorPicker fx:id="colorPicker" layoutX="1221.0" onAction="#ChangingColor" prefHeight="42.0" prefWidth="117.0" />
+        <Label fx:id="timeShowLabel" layoutX="933.0" prefHeight="42.0" prefWidth="242.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="TeacherDegreeField" layoutX="852.0" layoutY="121.0" prefHeight="57.0" prefWidth="202.0" />
+        <ChoiceBox fx:id="CollegeNameField" layoutX="500.0" layoutY="121.0" prefHeight="57.0" prefWidth="202.0" />
+        <Label alignment="CENTER" layoutX="533.0" layoutY="66.0" prefHeight="42.0" prefWidth="142.0" text="College name" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="882.0" layoutY="66.0" prefHeight="42.0" prefWidth="142.0" text="Teacher degree" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="179.0" layoutY="66.0" prefHeight="42.0" prefWidth="142.0" text="Last Name" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Button fx:id="ShowButton" layoutX="1174.0" layoutY="128.0" mnemonicParsing="false" onAction="#ShowButtonFunction" onMouseEntered="#mouseMovedShowButton" onMouseExited="#mouseExitShowButton" prefHeight="42.0" prefWidth="95.0" text="Show">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Line endX="1231.0" layoutX="105.0" layoutY="287.0" startX="-100.0" />
+        <Label layoutX="217.0" layoutY="221.0" prefHeight="57.0" prefWidth="65.0" text="Name">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="921.0" layoutY="221.0" prefHeight="57.0" prefWidth="73.0" text="Degree">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="530.0" layoutY="221.0" prefHeight="57.0" prefWidth="142.0" text="College Name">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="LastnameTextField" layoutX="148.0" layoutY="121.0" prefHeight="57.0" prefWidth="202.0" />
+        <ScrollPane layoutX="-1.0" layoutY="288.0" prefHeight="536.0" prefWidth="1338.0">
+            <content>
+                <AnchorPane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="536.0" prefWidth="1333.0" />
+            </content>
+        </ScrollPane>
+        <Button fx:id="LogOutButton" layoutX="1280.0" layoutY="240.0" mnemonicParsing="false" onAction="#LogOutFunction" onMouseEntered="#mouseMovedLogOut" onMouseExited="#mouseExitLogOut" prefHeight="47.0" prefWidth="57.0" style="-fx-background-color: #FC0216;" />
+    </children>
+</AnchorPane>

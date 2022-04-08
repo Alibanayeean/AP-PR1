@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Scroolbar" prefHeight="825.0" prefWidth="1316.0" style="-fx-background-image: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentController.ProfileStudent">
+    <children>
+        <MenuBar fx:id="MenuBar" prefHeight="42.0" prefWidth="933.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Registration matters">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Courses list" />
+                        <MenuItem mnemonicParsing="false" onAction="#TeacherListMenuFunction" text="Teachers list" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Educational services">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Record works">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Profile">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="HomeButton" layoutX="1175.0" mnemonicParsing="false" onAction="#HomeButtonFunction" onMouseEntered="#mouseMovedHomeButton" onMouseExited="#mouseExitHomeButton" prefHeight="33.0" prefWidth="46.0" />
+        <ColorPicker fx:id="colorPicker" layoutX="1221.0" onAction="#ChangingColor" prefHeight="42.0" prefWidth="117.0" />
+        <Label fx:id="timeShowLabel" layoutX="933.0" prefHeight="42.0" prefWidth="242.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="LogOutButton" layoutX="1281.0" layoutY="778.0" mnemonicParsing="false" onAction="#LogOutFunction" onMouseEntered="#mouseMovedLogOut" onMouseExited="#mouseExitLogOut" prefHeight="47.0" prefWidth="57.0" style="-fx-background-color: #FC0216;" />
+      <Label layoutX="14.0" layoutY="50.0" prefHeight="57.0" prefWidth="107.0" text="First name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="110.0" prefHeight="57.0" prefWidth="107.0" text="Last name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="170.0" prefHeight="57.0" prefWidth="117.0" text="Identity code:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="230.0" prefHeight="57.0" prefWidth="151.0" text="Student Number: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="290.0" prefHeight="57.0" prefWidth="139.0" text="Phone number:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="350.0" prefHeight="57.0" prefWidth="69.0" text="Email:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="410.0" prefHeight="57.0" prefWidth="127.0" text="Average Score:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="470.0" prefHeight="57.0" prefWidth="79.0" text="College:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="530.0" prefHeight="57.0" prefWidth="151.0" text="Teacher assistant:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="590.0" prefHeight="57.0" prefWidth="200.0" text="Year come to University:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="650.0" prefHeight="57.0" prefWidth="85.0" text="Grade:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="710.0" prefHeight="57.0" prefWidth="85.0" text="Status:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="FirstNameLabel" layoutX="296.0" layoutY="63.0" prefHeight="57.0" prefWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LastNameLabel" layoutX="296.0" layoutY="110.0" prefHeight="57.0" prefWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="IdentityCodeLabel" layoutX="296.0" layoutY="170.0" prefHeight="57.0" prefWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="UsernameLabel" layoutX="296.0" layoutY="230.0" prefHeight="57.0" prefWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="AverageScoreLabel" layoutX="296.0" layoutY="410.0" prefHeight="57.0" prefWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="CollegeLabel" layoutX="296.0" layoutY="470.0" prefHeight="57.0" prefWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="HelpTeacherLabel" layoutX="296.0" layoutY="530.0" prefHeight="57.0" prefWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="YearComeToUniversityLabel" layoutX="296.0" layoutY="590.0" prefHeight="57.0" prefWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="GradeLabel" layoutX="296.0" layoutY="650.0" prefHeight="57.0" prefWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="StatusLabel" layoutX="296.0" layoutY="710.0" prefHeight="57.0" prefWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PhoneNumberTextField" layoutX="296.0" layoutY="290.0" prefHeight="57.0" prefWidth="280.0" />
+      <TextField fx:id="EmailTextField" layoutX="296.0" layoutY="350.0" prefHeight="57.0" prefWidth="280.0" />
+      <Button fx:id="EditPhoneNumber" layoutX="604.0" layoutY="316.0" mnemonicParsing="false" onAction="#EditPhoneNumberFunction" text="Edit">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="EditEmail" layoutX="604.0" layoutY="376.0" mnemonicParsing="false" onAction="#EditEmailFunction" text="Edit">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageViewUser" fitHeight="256.0" fitWidth="256.0" layoutX="942.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
